@@ -14,7 +14,7 @@ function att(){
 		player.setAttribute('src', 'x.jpg')
 	}else if(turn == player2){
 		let player = document.querySelectorAll("div#tit img")[0]
-		player.setAttribute('src', 'cicle.jpg')
+		player.setAttribute('src', 'circle.jpg')
 	}
 }
 
@@ -31,7 +31,7 @@ function ini(){
 					this.setAttribute('jogada', player1)
 					turn = player2
 				}else{
-					this.innerHTML = "<img src='cicle.jpg'>"
+					this.innerHTML = "<img src='circle.jpg'>"
 					this.setAttribute('jogada', player2)
 					turn = player1
 				}
