@@ -2,15 +2,32 @@ body{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	background: #e05164;
+	font: normal 12pt Arial;
+	font-weight: bolder;
+	font-style: italic;
+}
+section{
+	background: #fff;
+	border-radius: 2%;
+	padding: 5%;
+	padding-right: 0%;
+	max-width: 80%;
+	min-width: 30%;
 }
 #tit{
 	display: flex;
 	flex-wrap: nowrap;
-	margin: 2%;
+	max-width: 100%;
+	min-width: 20%;
+	justify-content: start;
+	margin: 5%;
+	color: #e05164;
 }
 #tab{
 	width: 300px;
 	height: 300px;
+	margin: auto;
 
 }
 .space{
@@ -24,4 +41,18 @@ body{
 .space img{
 	width: 50px;
 	margin-left: 12px;
+}
+#zerar{
+	display: flex;
+	justify-content: end;
+	max-width: 84%;
+	min-width: 25%;
+}
+
+#zerar input{
+	color: #e05164;
+	padding: 2%;
+	font: normal 15pt Arial;
+	font-weight: bolder;
+	border-radius: 10%;
 }
