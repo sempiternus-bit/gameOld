@@ -2,6 +2,7 @@ const player1 = "X"
 const player2 = "O"
 let turn = player1
 let gameover = false
+let vencedor = ''
 
 att()
 ini()
@@ -44,6 +45,7 @@ function ini(){
 }
 
 async function verification(){
+
 	let a1 = document.getElementById('a1').getAttribute('jogada')
 	let a2 = document.getElementById('a2').getAttribute('jogada')
 	let a3 = document.getElementById('a3').getAttribute('jogada')
@@ -56,7 +58,6 @@ async function verification(){
 	let c2 = document.getElementById('c2').getAttribute('jogada')
 	let c3 = document.getElementById('c3').getAttribute('jogada')
 
-	let vencedor = ''
 
 	if((a1 == b1 && a1 == c1 && a1 != '') || (a1 == a2 & a1 == a3 && a1 != '') || (a1 == b2 & a1 == c3 && a1 != '')){
 		
@@ -84,4 +85,23 @@ async function verification(){
 
 function sleep(ms){
 	return new Promise(resolve => setTimeout(resolve, ms))
+}
+
+function reset(){
+
+	let space = document.getElementsByClassName('space')
+
+	for (let i = 0; i < space.length; i++){
+		space[i].innerHTML = ''
+		space[i].setAttribute('jogada', '')
+
+	}
+	if (gameover == true){
+
+		gameover = false
+		vencedor = ''
+
+
+	}
+
 }
