@@ -3,7 +3,10 @@ const player2 = "O"
 let turn = player1
 let gameover = false
 let vencedor = ''
+let x = 0
+let o = 0
 
+placar()
 att()
 ini()
 
@@ -79,6 +82,13 @@ async function verification(){
 		gameover = true
 		await sleep(50)
 		alert('o vencedor foi o: ' + vencedor)
+		if(vencedor == "X"){
+			x += 1
+			placar()
+		}else{
+			o += 1
+			placar()
+		}
 
 	}		
 }
@@ -104,4 +114,10 @@ function reset(){
 
 	}
 
+}
+
+function placar(){
+
+	let score = document.getElementById('score')
+	score.innerHTML = `X: ${x} O: ${o}`
 }
