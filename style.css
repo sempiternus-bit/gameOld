@@ -13,7 +13,7 @@ section{
 	padding: 5%;
 	padding-right: 0%;
 	max-width: 80%;
-	min-width: 40%;
+	min-width: 30%;
 }
 #tit{
 	display: flex;
@@ -25,9 +25,10 @@ section{
 	color: #e05164;
 }
 #tab{
-        max-width: 100%;
 	width: 300px;
 	height: 300px;
+	max-width: 100%;
+	max-height: 100%;
 	margin: auto;
 
 }
@@ -56,4 +57,17 @@ section{
 	font: normal 15pt Arial;
 	font-weight: bolder;
 	border-radius: 10%;
+}
+footer{
+	color: #e05164;
+	background: #fff;
+	max-width: 100%;
+	min-width: 33%;
+	border-radius: 8%;
+	margin: 1%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 1%;
+
 }
